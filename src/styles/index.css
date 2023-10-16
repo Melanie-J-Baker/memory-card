@@ -1,0 +1,16 @@
+@font-face {
+  font-family: FuturamaTitle;
+  src: url(../assets/fonts/fr-title.ttf);
+}
+
+@font-face {
+  font-family: FuturamaText;
+  src: url(../assets/fonts/fr-bold.ttf);
+}
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: FuturamaText, sans-serif;
+}

@@ -1,0 +1,42 @@
+/*#root {
+}*/
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/Futurama.jpg');
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  background-color: rgba(151, 150, 150, 0.7);
+}
+
+h1 {
+  font-family: FuturamaTitle;
+  font-size: 5rem;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.scores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.5rem;
+}
+
+.score {
+  text-align: end;
+  padding-right: 10px;
+}
+
+.highScore {
+  text-align: start;
+  padding-left: 10px;
+}
