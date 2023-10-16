@@ -71,7 +71,7 @@ export default function GameArea({
         <>
             <Header score={score} highScore={highScore} />
             <div className="cards">
-                {currentCharacters.map(character => {
+                {toDisplay.map(character => {
                     return (
                         <Card
                             key={character.id}
