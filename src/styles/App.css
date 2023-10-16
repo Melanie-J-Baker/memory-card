@@ -1,5 +1,10 @@
 /*#root {
 }*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .main {
   display: grid;
@@ -8,6 +13,7 @@
   width: 100vw;
   height: 100vh;
   background-image: url('../assets/Futurama.jpg');
+  background-size: cover;
 }
 
 .header {
@@ -39,4 +45,16 @@ h1 {
 .highScore {
   text-align: start;
   padding-left: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.card {
+  background-color: white;
+  border: 2px black solid;
+  margin: 10px;
 }
