@@ -46,7 +46,7 @@ function App() {
     if (character.clicked) {
       return 'lose'
     }
-    if (score === 10) {
+    if (score === 9) {
       return 'win'
     } else {
       return ""
