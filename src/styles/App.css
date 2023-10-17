@@ -14,6 +14,7 @@
   height: 100vh;
   background-image: url('../assets/Futurama.jpg');
   background-size: cover;
+  position: relative;
 }
 
 .header {
@@ -57,4 +58,40 @@ h1 {
   background-color: white;
   border: 2px black solid;
   margin: 10px;
+}
+
+.lose, .win {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: darkgray;
+  padding: 20px;
+  border: 2px black solid;
+  font-size: 1.5rem;
+  box-shadow: 4px 4px 3px rgb(24, 27, 24);
+}
+
+.result {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.result-btn {
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 15px;
+  margin: 3px;
+  background-color:rgb(24, 27, 24);
+  color: white;
+  font-family: FuturamaText;
+  transition: all 0.5s ease-in-out;
+}
+
+.result-btn:hover {
+  transform: scale(1.05);
+  background-color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 2px white, -2px -2px 2px white;
 }
