@@ -1,62 +1,73 @@
+import fry from "./assets/fry.png";
+import zoidberg from "./assets/zoidberg.png";
+import leela from "./assets/leela.png";
+import amy from "./assets/amy-wong.png";
+import zapp from "./assets/zapp.png";
+import bender from "./assets/bender.png";
+import roberto from "./assets/roberto.png";
+import nibbler from "./assets/nibbler.png";
+import prof from "./assets/prof.png";
+import hermes from "./assets/hermes.png";
+
 const characters = [
   {
     id: 1,
     name: "Phillip J. Fry",
-    src: "/src/assets/fry.png",
+    src: fry,
     clicked: false,
   },
   {
     id: 2,
     name: "Zoidberg",
-    src: "/src/assets/zoidberg.png",
+    src: zoidberg,
     clicked: false,
   },
   {
     id: 3,
     name: "Leela",
-    src: "/src/assets/leela.png",
+    src: leela,
     clicked: false,
   },
   {
     id: 4,
     name: "Amy Wong",
-    src: "/src/assets/amy-wong.png",
+    src: amy,
     clicked: false,
   },
   {
     id: 5,
     name: "Zapp Brannigan",
-    src: "/src/assets/zapp.png",
+    src: zapp,
     clicked: false,
   },
   {
     id: 6,
     name: "Bender",
-    src: "/src/assets/bender.png",
+    src: bender,
     clicked: false,
   },
   {
     id: 7,
     name: "Roberto",
-    src: "/src/assets/roberto.png",
+    src: roberto,
     clicked: false,
   },
   {
     id: 8,
     name: "Nibbler",
-    src: "/src/assets/nibbler.png",
+    src: nibbler,
     clicked: false,
   },
   {
     id: 9,
     name: "Professor Farnsworth",
-    src: "/src/assets/prof.png",
+    src: prof,
     clicked: false,
   },
   {
     id: 10,
     name: "Hermes Conrad",
-    src: "/src/assets/hermes.png",
+    src: hermes,
     clicked: false,
   },
 ];
