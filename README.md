@@ -1,8 +1,5 @@
-# React + Vite
+Futurama Memory Card Game - made as part of the Odin Project using React and Javascript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/Melanie-J-Baker/memory-card/assets/104843873/9b6db185-f1cd-4388-a083-ae76ebec1a5c)
+![image](https://github.com/Melanie-J-Baker/memory-card/assets/104843873/b3f52b4c-33ac-4edd-9fd4-85b861f72107)
+![image](https://github.com/Melanie-J-Baker/memory-card/assets/104843873/a814bfd8-177c-4b12-a300-17ac2b7a287e)
