@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --yellow: rgb(250, 227, 18);
 }
 
 .main {
@@ -20,71 +21,134 @@
 .header {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 3fr 1fr;
   background-color: rgba(151, 150, 150, 0.7);
+  width: 100vw
 }
 
 h1 {
   font-family: FuturamaTitle;
-  font-size: 5rem;
+  font-size: 2.5rem;
   margin: auto;
   text-align: center;
   padding: 10px;
+  text-shadow: 1px 1px 1px rgb(229, 236, 236);
 }
 
 .scores {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
-.score {
-  text-align: end;
-  padding-right: 10px;
-}
-
-.highScore {
-  text-align: start;
-  padding-left: 10px;
+.score, .highScore {
+  padding: 10px;
+  margin: 0 10px 10px auto;
+  background-color: var(--yellow);
+  width: fit-content;
+  border-radius: 5px;
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-  background-color: white;
+  background-image: url('/src/assets/card-front.jpeg');
+  background-size: cover;
   border: 2px black solid;
-  margin: 10px;
+  border-radius: 5px;
+  aspect-ratio: 1 / 1.5;
+  width: 20%;
+  max-width: 200px;
+  margin: 5px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+
+  &.flipped {
+    transform: rotateY(180deg);
+  }
+}
+
+.frontCard,
+ .image {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image {
+  width: 100%;
+  height: 90%;
+  -webkit-filter: drop-shadow(1px 1px 1px var(--yellow)) drop-shadow(-1px -1px 1px var(--yellow));
+  filter: drop-shadow(1px 1px 1px var(--yellow)) drop-shadow(-1px -1px 1px var(--yellow));
+}
+.frontCard {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.name {
+  font-size: 0.6rem;
+  margin-top: 5px;
+  text-align: center;
+  text-shadow: 1px 1px white;
+}
+
+.backCard {
+  height: 100%;
+  background-image: url('../assets/card-back.jpeg');
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(180deg);
 }
 
 .lose, .win {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   left: 50%;
   top: 50%;
+  transform: translate(-50%, -50%);
   background-color: darkgray;
-  padding: 20px;
+  padding: 10px;
   border: 2px black solid;
   font-size: 1.5rem;
   box-shadow: 4px 4px 3px rgb(24, 27, 24);
+  margin-bottom: 20px;
+  text-align: center;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 300px;
 }
 
 .result {
-  margin-bottom: 20px;
-  text-align: center;
+  padding: 20px;
 }
 
 .result-btn {
   font-size: 1rem;
   border: none;
   border-radius: 5px;
-  padding: 3px 15px;
-  margin: 3px;
-  background-color:rgb(24, 27, 24);
+  padding: 5px 15px;
+  margin: 5px;
+  background-color:rgb(41, 119, 21);
   color: white;
   font-family: FuturamaText;
   transition: all 0.5s ease-in-out;

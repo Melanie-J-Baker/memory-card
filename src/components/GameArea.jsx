@@ -55,7 +55,7 @@ export default function GameArea({
             setFlipped(false);
             setClicked(false);
             roundResult = "";
-        }, 600);
+        }, 1020);
     }
 
     const restart = () => {
