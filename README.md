@@ -1,6 +1,8 @@
-Futurama Memory Card Game - made as part of the Odin Project using React and Javascript
+# Futurama Memory Card Game
 
-https://futurama-memory-card.netlify.app/
+A card-based memory game made as part of the Odin Project using React and Javascript: https://www.theodinproject.com/lessons/node-path-react-new-memory-card
+
+Try it here: https://futurama-memory-card.netlify.app/
 
 ![image](https://github.com/Melanie-J-Baker/memory-card/assets/104843873/8f562298-2a72-4d09-8f19-8590388ccbf7)
 ![image](https://github.com/Melanie-J-Baker/memory-card/assets/104843873/9b6db185-f1cd-4388-a083-ae76ebec1a5c)
